@@ -8,6 +8,15 @@ function Darkbutton() {
   const toggleDarkMode = () => {
     // When dark mode is active, change background to black and text to white.
     // When light mode is active, change background to white and text to black.
+    setIsDarkMode(!isDarkMode);
+    if(!isDarkMode){
+      document.body.style.background='rgb(24, 24, 24)';
+      document.body.style.color='rgb(240,240,240)';
+    }else{
+      document.body.style.background='rgb(240,240,240)';
+      document.body.style.color='rgb(0,0,0)'
+    }
+
   };
 
   return (
